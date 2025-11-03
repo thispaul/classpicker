@@ -57,6 +57,10 @@ The extension uses:
 - **Message Passing**: Communicates filter changes between the panel and content script
 - **DOM Observation**: Automatically reapplies filters when new classes load
 
+Screenshot of ClassPicker Chrome extension:
+<img width="1822" height="1090" alt="classpicker screenshot" src="https://github.com/user-attachments/assets/e882b607-383a-4799-a222-a67fa6510b6f" />
+
+
 ## Technical Details
 
 - **Manifest Version**: 3

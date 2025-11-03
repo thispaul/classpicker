@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ClassPicker</title>
+  <link rel="stylesheet" href="sidepanel.css">
+</head>
+<body>
+    <div class="container">
+    <div class="header">
+      <h1>ClassPicker</h1>
+      <p class="subtitle">Filter classes in real-time</p>
+    </div>
+
+    <div class="filters">
+      <div class="filter-group">
+        <label for="maxCost">Max Cost (Credits)</label>
+        <select id="maxCost" class="filter-select">
+          <option value="">No limit</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <label for="minDuration">Minimum Duration (Minutes)</label>
+        <select id="minDuration" class="filter-select">
+          <option value="">Any duration</option>
+          <option value="30">30 min</option>
+          <option value="50">50 min</option>
+          <option value="60">60 min</option>
+          <option value="75">75 min</option>
+          <option value="90">90 min</option>
+          <option value="120">120 min</option>
+        </select>
+      </div>
+
+      <div class="button-group">
+        <button id="clearFilters" class="btn btn-secondary">Clear Filters</button>
+      </div>
+
+      <div id="status" class="status"></div>
+      
+      <div class="results-info">
+        <p id="resultsCount"></p>
+      </div>
+    </div>
+
+    <div class="info">
+      <h3>How to use:</h3>
+      <ol>
+        <li>Browse to classpass.com</li>
+        <li>Select your filter criteria above</li>
+        <li>Classes will be filtered automatically</li>
+        <li>Clear filters by selecting "No limit" or "Any duration"</li>
+      </ol>
+    </div>
+  </div>
+
+  <script src="sidepanel.js"></script>
+</body>
+</html>
